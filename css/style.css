@@ -1,0 +1,337 @@
+:root {
+    --black: #222222;
+    --pink-bkg: #F1E4E6;
+    --pink-text: #F1808F;
+    --white: #FFF;
+    --product-bkg: #F8F8F8;
+    --product-item-text: #5D5D5D;
+    --benefits-item-text: #FBFBFB;
+}
+
+.body {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: var(--black);
+}
+
+.header__logo {
+    margin: 0 41px 0 0;
+}
+
+.header__button {
+    background-color: transparent;
+    border: 0;
+}
+
+.header__link {
+    margin: 0 0 0 33px;
+}
+
+.header__menu {
+    display: none;
+}
+
+.header__wrp {
+    display: flex;
+    justify-content: space-between;
+    min-height: 75px;
+    align-items: center;
+}
+
+.brand {
+    display: flex;
+    margin: 0 0 63px 0;
+}
+
+.brand__title-wrp {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 92px;
+    background-color: var(--pink-bkg);
+    flex-grow: 1;
+}
+
+.brand__title {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+.brand__sub-title {
+    display: block;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 38px;
+}
+
+.brand__sub-title-pink {
+    color: var(--pink-text);
+}
+
+.sales {
+    margin-bottom: 96px;
+}
+
+.sales__item {
+    width: 360px;
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sales__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sales__item-text {
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.sales__item-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    color: var(--pink-text);
+    text-transform: uppercase;
+}
+
+.sales__item_woman {
+    background-image: url('../img/sales-woman.jpg');
+    margin: 0 30px 30px 0;
+}
+
+.sales__item_man {
+    background-image: url('../img/sales-man.jpg');
+    margin: 0 30px 30px 0;
+}
+
+.sales__item_kid {
+    background-image: url('../img/sales-kid.jpg');
+    margin: 0 0 30px 0;
+}
+
+.sales__item_accessories {
+    background-image: url('../img/sales-accessories.jpg');
+    width: 100%;
+}
+
+.products {
+    margin-bottom: 95px;
+}
+
+.products__title {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.products__text {
+    text-align: center;
+    margin: 0 0 48px 0;
+}
+
+.products__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products__item {
+    width: 360px;
+    min-height: 581px;
+    background-color: var(--product-bkg);
+    margin: 0 0 30px 0;
+}
+
+.products__item-margin {
+    margin: 0 30px 30px 0;
+}
+
+.products__item-title {
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: uppercase;
+    padding: 25px 0 0 18px;
+}
+
+.products__item-text {
+    font-weight: 300;
+    line-height: 17px;
+    padding: 12px 0 0 18px;
+    color: var(--product-item-text);
+}
+
+.products__item-price {
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--pink-text);
+    text-transform: uppercase;
+    padding: 18px 0 0 18px;
+}
+
+.products__button {
+    margin: 18px 0 0 0;
+    width: 211px;
+    min-height: 47px;
+    border: 1px solid #FF6A6A;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: var(--white);
+}
+
+.products__button-text {
+    color: var(--pink-text);
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.benefits {
+    background-color: var(--black);
+    min-height: 341px;
+    display: flex;
+    align-items: center;
+}
+
+.benefits__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefits__item {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+.benefits__item-delivery {
+    padding: 0 0 28px 0;
+}
+
+.benefits__item-sales {
+    padding: 0 0 19px 0;
+}
+
+.benefits__item-quality {
+    padding: 0 0 25px 0;
+}
+
+.benefits__item-title {
+    font-size: 19px;
+    line-height: 24px;
+    color: var(--white);
+    padding: 0 0 16px 0;
+}
+
+.benefits__item-text {
+    font-weight: 300;
+    line-height: 17px;
+    text-align: center;
+    color: #FBFBFB;
+}
+
+.subscription {
+    background-image: url('../img/subscription-bkg.jpg');
+    width: 1598px;
+    height: 448px;
+}
+
+.subscription__wrp {
+    display: flex;
+    align-items: center;
+    padding: 86px 0 0 0;
+}
+
+.subscription__face {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscription__face-img {
+    background-color: transparent;
+}
+
+.subscription__face-text {
+    width: 359px;
+    text-align: center;
+    padding: 44px 0 0 0;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 24px;
+}
+
+.subcription__email {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subcription__email-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+.subcription__email-text {
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.subcription__email-input {
+    margin: 32px 0 0 0;
+}
+
+.copyright {
+    background-color: var(--black);
+}
+
+.copyright__wrp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 23px 0 22px 0;
+}
+
+.copyright__wrp-text {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+    color: var(--white);
+}
