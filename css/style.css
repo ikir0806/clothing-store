@@ -335,3 +335,11 @@
     text-align: left;
     color: var(--white);
 }
+
+.copyright__wrp-links {
+    display: flex;
+}
+
+.copyright__wrp-link {
+    margin: 0 0 0 7px;
+}
