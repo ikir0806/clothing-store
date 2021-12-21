@@ -6,6 +6,7 @@
     --product-bkg: #F8F8F8;
     --product-item-text: #5D5D5D;
     --benefits-item-text: #FBFBFB;
+    --registration-bkg: #F8F3F4;
 }
 
 .body {
@@ -38,8 +39,40 @@
     background-color: var(--black);
 }
 
+.header__search-group {
+    display: flex;
+}
+
 .header__logo {
     margin: 0 41px 0 0;
+}
+
+.header__search {
+    position: relative;
+}
+
+.header__search-input {
+    padding: 10px 40px;
+    border: none;
+    background: transparent;
+    outline: 1px solid var(--white);
+    border-radius: 40px 40px 40px 40px;
+}
+  
+.header__search-input:hover {
+    outline: 1px solid var(--pink-text);
+}
+  
+.header__search:before {
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background: transparent;
+    top: 7px;
+    left: 7px;
+    background-image: url("../img/loupe.svg");
+    background-size: 26px 26px;
 }
 
 .header__button {
@@ -47,8 +80,28 @@
     border: 0;
 }
 
+.header__button:hover, .header__button:focus {
+    opacity: 0.5;
+    cursor: pointer;
+    outline: none;
+}
+
+.header__button:active {
+    opacity: 0.7;
+}
+
 .header__link {
     margin: 0 0 0 33px;
+}
+
+.header__link:hover, .header__link:focus {
+    opacity: 0.5;
+    cursor: pointer;
+    outline: none;
+}
+
+.header__link:active {
+    opacity: 0.7;
 }
 
 .header__menu {
@@ -76,11 +129,22 @@
 }
 
 .brand__title {
+    position: relative;
     font-size: 48px;
     font-weight: 900;
     line-height: 58px;
     color: var(--black);
     text-transform: uppercase;
+}
+
+.brand__title:after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 100%;
+    background: var(--pink-text);
+    left: -28px;
+    top: -1px;
 }
 
 .brand__sub-title {
@@ -178,6 +242,51 @@
     margin: 0 30px 30px 0;
 }
 
+.products_item-wrapper-overlay {
+    position: relative;
+}
+
+.products_item-wrapper-overlay:before {
+    content: '';
+    width: 100%;
+    min-height: 420px;
+    background: rgba(58, 56, 56, 0.86);
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+.products__item-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    width: 138px;
+    min-height: 43px;
+    background: transparent;
+    border: 1px solid var(--white);
+    border-color: var(--white);
+    color: var(--white);
+}
+
+.products__item-button-wrp {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.products__item:hover .products_item-wrapper-overlay:before,
+.products__item:hover .products__item-button,
+.products__item:focus .products_item-wrapper-overlay:before,
+.products__item:focus .products__item-button,
+.products__item:active .products_item-wrapper-overlay:before,
+.products__item:active .products__item-button
+ {
+    display: block;
+    cursor: pointer;
+}
+
 .products__item-title {
     font-size: 13px;
     line-height: 16px;
@@ -209,12 +318,15 @@
     left: 50%;
     transform: translate(-50%, 0);
     background-color: var(--white);
-}
-
-.products__button-text {
     color: var(--pink-text);
     font-size: 16px;
     line-height: 19px;
+}
+
+.products__button:hover, .products__button:focus {
+    background-color: var(--pink-text);
+    color: var(--white);
+    cursor: pointer;
 }
 
 .benefits {
@@ -314,8 +426,39 @@
     text-transform: uppercase;
 }
 
-.subcription__email-input {
+.subcription__email-wrp {
+    display: flex;
     margin: 32px 0 0 0;
+}
+
+.subcription__email-input {
+    border-radius: 40px 0px 0px 40px;
+    border: none;
+    height: 49px;
+    width: 256px;
+    resize: none;
+    background: #E1E1E1;
+    opacity: 0.67;
+    text-align: center;
+}
+
+.subcription__email-button {
+    border-radius: 0px 40px 40px 0px;
+    height: 49px;
+    width: 100px;
+    border: none;
+    background: var(--pink-text);
+    color: var(--white);
+}
+
+.subcription__email-button:hover, .subcription__email-button:focus {
+    opacity: 0.5;
+    cursor: pointer;
+    outline: none;
+}
+
+.subcription__email-button:active {
+    opacity: 0.7;
 }
 
 .copyright {
@@ -340,6 +483,43 @@
     display: flex;
 }
 
-.copyright__wrp-link {
+.copyright__wrp-icon-bkg {
+    fill: var(--white);
+}
+
+.copyright__wrp-icon {
+    fill: var(--black);
+}
+
+.copyright__wrp-link:hover .copyright__wrp-icon-bkg, .copyright__wrp-link:focus .copyright__wrp-icon-bkg {
+    fill: var(--pink-text);
+}
+
+.copyright__wrp-link:hover .copyright__wrp-icon, .copyright__wrp-link:focus .copyright__wrp-icon {
+    fill: var(--white);
+}
+
+.copyright__wrp-link-margin {
     margin: 0 0 0 7px;
+}
+
+.title {
+    min-height: 148px;
+    background-color: var(--registration-bkg);
+}
+
+.title__text {
+    padding: 59px 0 0 0;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--pink-text);
+    text-transform: uppercase;
+}
+
+.registration-wrp {
+    display: flex;
+}
+
+.registration__label {
+    display: block;
 }
