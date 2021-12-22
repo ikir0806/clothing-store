@@ -1,0 +1,49 @@
+.sales {
+    margin-bottom: 96px;
+
+    &__item {
+        width: 360px;
+        min-height: 260px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &-text {
+            @include font (16px, 19px);
+            color: $white;
+            text-transform: uppercase;
+        }
+        
+        &-title {
+            @include font (24px, 29px, 700);
+            color: $pink-text;
+            text-transform: uppercase;
+        }
+        
+        &_woman {
+            background-image: url('../img/sales-woman.jpg');
+            margin: 0 30px 30px 0;
+        }
+        
+        &_man {
+            background-image: url('../img/sales-man.jpg');
+            margin: 0 30px 30px 0;
+        }
+        
+        &_kid {
+            background-image: url('../img/sales-kid.jpg');
+            margin: 0 0 30px 0;
+        }
+        
+        &_accessories {
+            background-image: url('../img/sales-accessories.jpg');
+            width: 100%;
+        }
+    }
+    
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

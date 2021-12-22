@@ -1,0 +1,44 @@
+.benefits {
+    background-color: $black;
+    min-height: 341px;
+    display: flex;
+    align-items: center;
+    
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        
+        &-delivery {
+            padding: 0 0 28px 0;
+        }
+    
+        &-sales {
+            padding: 0 0 19px 0;
+        }
+    
+        &-quality {
+            padding: 0 0 25px 0;
+        }
+    
+        &-title {
+            @include font ($font-size: 19px, $line-height: 24px);
+            color: $white;
+            padding: 0 0 16px 0;
+        }
+    
+        &-text {
+            @include font ($font-weight: 300);
+            text-align: center;
+            color: #FBFBFB;
+        }
+    }
+
+    
+}

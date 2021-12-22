@@ -1,0 +1,123 @@
+.products {
+    margin-bottom: 95px;
+
+    &__title {
+        @include font (30px, 36px);
+        text-align: center;
+    }
+    
+    &__text {
+        text-align: center;
+        margin: 0 0 48px 0;
+    }
+    
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    &__item {
+        width: 360px;
+        min-height: 581px;
+        background-color: $product-bkg;
+        margin: 0 0 30px 0;
+    }
+    
+    &__item-margin {
+        margin: 0 30px 30px 0;
+    }
+    
+    &_item-wrapper-overlay {
+        position: relative;
+    }
+    
+    &_item-wrapper-overlay:before {
+        content: '';
+        width: 100%;
+        min-height: 420px;
+        background: rgba(58, 56, 56, 0.86);
+        position: absolute;
+        top: 0;
+        display: none;
+    }
+    
+    &__item-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+        width: 138px;
+        min-height: 43px;
+        background: transparent;
+        border: 1px solid $white;
+        border-color: $white;
+        color: $white;
+    }
+    
+    &__item-button:hover,
+    &__item-button:focus {
+        border: 1px solid $pink-text;
+    }
+    
+    &__item-button:active {
+        border: 1px solid $pink-text;
+        opacity: 0.7;
+    }
+    
+    &__item-button-wrp {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    &__item:hover &_item-wrapper-overlay:before,
+    &__item:hover &__item-button,
+    &__item:focus &_item-wrapper-overlay:before,
+    &__item:focus &__item-button,
+    &__item:active &_item-wrapper-overlay:before,
+    &__item:active &__item-button
+     {
+        display: block;
+        cursor: pointer;
+    }
+    
+    &__item-title {
+        @include font (13px, 16px);
+        text-transform: uppercase;
+        padding: 25px 0 0 18px;
+    }
+    
+    &__item-text {
+        @include font ($font-weight: 300);
+        padding: 12px 0 0 18px;
+        color: $grey-text;
+    }
+    
+    &__item-price {
+        @include font (16px, 19px);
+        color: $pink-text;
+        text-transform: uppercase;
+        padding: 18px 0 0 18px;
+    }
+    
+    &__button {
+        margin: 18px 0 0 0;
+        width: 211px;
+        min-height: 47px;
+        border: 1px solid #FF6A6A;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+        background-color: $white;
+        color: $pink-text;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    
+    &__button:hover, &__button:focus {
+        background-color: $pink-text;
+        color: $white;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,90 @@
+.subscription {
+    background-image: url('../img/subscription-bkg.jpg');
+    width: 1598px;
+    height: 448px;
+
+    &__wrp {
+        display: flex;
+        align-items: center;
+        padding: 86px 0 0 0;
+    }
+    
+    &__face {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    &__face-img {
+        background-color: transparent;
+    }
+    
+    &__face-text {
+        width: 359px;
+        text-align: center;
+        padding: 44px 0 0 0;
+        @include font (20px, 24px, 400, italic);
+    }
+    
+    &__email {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-title {
+            @include font (24px, 40px, 700);
+            text-transform: uppercase;
+        }
+        
+        &-text {
+            @include font (18px, 30px);
+            font-size: 18px;
+            line-height: 30px;
+            text-transform: uppercase;
+        }
+        
+        &-wrp {
+            display: flex;
+            margin: 32px 0 0 0;
+        }
+        
+        &-input {
+            border-radius: 40px 0px 0px 40px;
+            border: none;
+            height: 47px;
+            width: 256px;
+            resize: none;
+            background: #E1E1E1;
+            opacity: 0.67;
+            text-align: center;
+            outline: 1px solid transparent;
+        }
+        
+        &-input:hover,
+        &-input:focus {
+            outline: 1px solid $pink-text;
+            cursor: pointer;
+        }
+        
+        &-button {
+            border-radius: 0px 40px 40px 0px;
+            height: 49px;
+            width: 100px;
+            border: none;
+            background: $pink-text;
+            color: $white;
+        }
+        
+        &-button:hover, &-button:focus {
+            opacity: 0.5;
+            cursor: pointer;
+            outline: none;
+        }
+        
+        &-button:active {
+            opacity: 0.7;
+        }
+    }
+}

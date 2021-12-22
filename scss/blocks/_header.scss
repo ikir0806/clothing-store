@@ -1,0 +1,97 @@
+.header {
+    background-color: $black;
+
+    &__search-group {
+        display: flex;
+    }
+    
+    &__logo {
+        margin: 0 41px 0 0;
+    }
+    
+    &__search {
+        position: relative;
+    }
+    
+    &__search-input {
+        padding: 10px 40px;
+        border: none;
+        color: $white;
+        background: transparent;
+        outline: 1px solid $white;
+        border-radius: 40px 40px 40px 40px;
+    }
+      
+    &__search-input:hover {
+        outline: 1px solid $pink-text;
+    }
+      
+    &__search:before {
+        content: '';
+        position: absolute;
+        width: 26px;
+        height: 26px;
+        background: transparent;
+        top: 7px;
+        left: 7px;
+        background-image: url("../img/loupe.svg");
+        background-size: 26px 26px;
+    }
+    
+    &__button {
+        background-color: transparent;
+        border: 0;
+    }
+    
+    &__button:hover, .header__button:focus {
+        opacity: 0.5;
+        cursor: pointer;
+        outline: none;
+    }
+    
+    &__button:active {
+        opacity: 0.7;
+    }
+    
+    &__link {
+        margin: 0 0 0 33px;
+    }
+    
+    &__link-busket {
+        position: relative;
+    }
+    
+    &__link-busket:before {
+        position: absolute;
+        content: '5';
+        background-color: $pink-text;
+        border-radius: 50%;
+        color: $white;
+        right: -10px;
+        top: -20px;
+        width: 19px;
+        height: 19px;
+        text-align: center;
+    }
+    
+    &__link:hover, .header__link:focus {
+        opacity: 0.5;
+        cursor: pointer;
+        outline: none;
+    }
+    
+    &__link:active {
+        opacity: 0.7;
+    }
+    
+    &__menu {
+        display: none;
+    }
+    
+    &__wrp {
+        display: flex;
+        justify-content: space-between;
+        min-height: 75px;
+        align-items: center;
+    }
+}
