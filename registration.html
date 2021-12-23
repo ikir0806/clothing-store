@@ -19,7 +19,7 @@
         <div class="container">
             <div class="header__wrp">
                 <div class="header__search-group">
-                    <img class="header__logo" src="img/logo.svg" alt="logo">
+                    <a class="header__logo" href="./index.html"><img src="./img/logo.svg" alt="logo"></a>
                     <form class="header__search" action="">
                         <label class="header__search-label visually-hidden" for="seacrh">поиск</label>
                         <input class="header__search-input" type="search" placeholder="Search" id="search">
@@ -30,7 +30,7 @@
                         <img src="img/burger.svg" alt="burger">
                     </button>
                     <a class="header__link" href="#"><img src="img/person.svg" alt="person"></a>
-                    <a class="header__link" href="#"><img src="img/busket.svg" alt="busket"></a>
+                    <a class="header__link header__link-busket" href="#"><img src="img/busket.svg" alt="busket"></a>
                 </div>
             </div>
             <nav class="header__menu">
@@ -77,39 +77,56 @@
             </div>
         </section>
         <section class="registration">
-            <div class="container registration-wrp">
-                <form action="">
+            <div class="container registration__wrp">
+                <form class="registration__field" action="">
                     <fieldset>
-                        <legend>Your Name</legend>
+                        <legend class="registration__name">Your Name</legend>
                         <label class="registration__label">
-                            <input type="text" placeholder="First Name" required>
+                            <input class="registration__input" type="text" placeholder="First Name" required>
                             <span class="visually-hidden">first name</span>
                         </label>
                         <label class="registration__label">
-                            <input type="text" placeholder="Second Name" required>
+                            <input class="registration__input" type="text" placeholder="Second Name" required>
                             <span class="visually-hidden">second name</span>
                         </label>
                     </fieldset>
-                    <input id="genderMale" type="radio" name="gender" value="male">
-                    <label for="genderMale">Male</label>
-                    <input id="genderFemale" type="radio" name="gender" value="female">
-                    <label for="genderFemale">Male</label>
+                    <div class="registration__gender">
+                        <input id="genderMale" type="radio" name="gender" value="male">
+                        <label class="registration__margin" for="genderMale">Male</label>
+                        <input id="genderFemale" type="radio" name="gender" value="female">
+                        <label for="genderFemale">Female</label>
+                    </div>
                     <fieldset>
-                        <legend>Login details</legend>
+                        <legend class="registration__details">Login details</legend>
                         <label class="registration__label">
-                            <input type="email" placeholder="Email" required>
+                            <input class="registration__input" type="email" placeholder="Email" required>
                             <span class="visually-hidden">email</span>
                         </label>
                         <label class="registration__label">
-                            <input type="password" placeholder="Password" required>
+                            <input class="registration__input" type="password" placeholder="Password" required>
                             <span class="visually-hidden">password</span>
                         </label>
                     </fieldset>
-                    <p>Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase
+                    <p class="registration__text">Please use 8 or more characters, with at least 1 number and a mixture
+                        of uppercase and lowercase
                         letters</p>
-                    <button type="submit">join now</button>
+                    <button class="registration__button" type="submit"><span class="registration__button-text">join
+                            now</span><span class="registration__button-img"><img src="./img/registration-arrow.svg"
+                                alt="registration-arrow"></span></button>
                 </form>
-                <div class="registration__loyalty"></div>
+                <div class="registration__loyalty">
+                    <h2 class="registration__loyalty-title">loyalty has its perks</h2>
+                    <p class="registration__loyalty-text">Get in on the loyalty program where you can earn points and
+                        unlock serious perks. Starting with
+                        these as soon as you join:</p>
+                    <ul class="registration__loyalty-list">
+                        <li class="registration__loyalty-item">15% off welcome offer</li>
+                        <li class="registration__loyalty-item">Free shipping, returns and exchanges on all orders</li>
+                        <li class="registration__loyalty-item">$10 off a purchase on your birthday</li>
+                        <li class="registration__loyalty-item">Early access to products</li>
+                        <li class="registration__loyalty-item">Exclusive offers & rewards</li>
+                    </ul>
+                </div>
         </section>
     </main>
     <footer class="footer">
@@ -121,13 +138,13 @@
                     <p class="subscription__face-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
                         pulvinar purus condimentum“</p>
                 </div>
-                <div class="subcription__email">
-                    <h3 class="subcription__email-title">subscribe</h3>
-                    <p class="subcription__email-text">for our newletter and promotion</p>
-                    <form class="subcription__email-wrp" action="">
-                        <label><input class="subcription__email-input" type="email" placeholder="Enter Your Email"><span
-                                class="visually-hidden">email</span></label>
-                        <button type="submit" class="subcription__email-button">Subscribe</button>
+                <div class="subscription__email">
+                    <h3 class="subscription__email-title">subscribe</h3>
+                    <p class="subscription__email-text">for our newletter and promotion</p>
+                    <form class="subscription__email-wrp" action="">
+                        <label><input class="subscription__email-input" type="email"
+                                placeholder="Enter Your Email"><span class="visually-hidden">email</span></label>
+                        <button type="submit" class="subscription__email-button">Subscribe</button>
                     </form>
                 </div>
             </div>

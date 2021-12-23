@@ -1,0 +1,43 @@
+.copyright {
+    background-color: $black;
+
+    &__wrp {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 23px 0 22px 0;
+
+        &-text {
+            @include font (16px, 19px);
+            text-align: left;
+            color: $white;
+        }
+        
+        &-links {
+            display: flex;
+        }
+        
+        &-icon-bkg {
+            fill: $white;
+        }
+        
+        &-icon {
+            fill: $black;
+        }
+        
+        &-link:hover .copyright__wrp-icon-bkg, .copyright__wrp-link:focus .copyright__wrp-icon-bkg {
+            fill: $pink-text;
+            cursor: pointer;
+        }
+        
+        &-link:hover .copyright__wrp-icon, .copyright__wrp-link:focus .copyright__wrp-icon {
+            fill: $white;
+            cursor: pointer;
+        }
+        
+        &-link-margin {
+            margin: 0 0 0 7px;
+        }
+    }
+}
+
