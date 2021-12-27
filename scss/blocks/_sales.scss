@@ -8,6 +8,18 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @include tablet {
+            width: 33%;
+            min-height: 168px;
+        }
+
+        @include mobile {
+            width: 100%;
+            min-height: 247px;
+        }
 
         &-text {
             @include font (16px, 19px);
@@ -24,11 +36,19 @@
         &_woman {
             background-image: url('../img/sales-woman.jpg');
             margin: 0 30px 30px 0;
+
+            @include tablet {
+                margin: 0 0 30px 0;
+            }
         }
         
         &_man {
             background-image: url('../img/sales-man.jpg');
             margin: 0 30px 30px 0;
+
+            @include tablet {
+                margin: 0 0 30px 0;
+            }
         }
         
         &_kid {
@@ -39,11 +59,20 @@
         &_accessories {
             background-image: url('../img/sales-accessories.jpg');
             width: 100%;
+
+            @include tablet {
+                min-height: 116px;
+            }
         }
     }
     
     &__list {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
+
+        @include mobile {
+            flex-direction: column;
+        }
     }
 }

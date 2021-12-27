@@ -7,6 +7,12 @@
     &__list {
         display: flex;
         justify-content: space-between;
+
+        @include tablet {
+            flex-direction: column;
+            align-items: center;
+            padding: 48px 0 64px 0;
+        }
     }
 
     &__item {
@@ -14,6 +20,10 @@
         display: flex;
         flex-direction: column;
         width: 350px;
+
+        @include tablet {
+            padding: 48px 0 0 0;
+        }
         
         &-delivery {
             padding: 0 0 28px 0;
