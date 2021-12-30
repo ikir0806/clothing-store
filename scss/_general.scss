@@ -19,4 +19,12 @@
 .container {
     width: 1140px;
     margin: 0 auto;
+
+    @include tablet {
+        width: 92%;
+    }
+
+    @include mobile {
+        width: 91%;
+    }
 }

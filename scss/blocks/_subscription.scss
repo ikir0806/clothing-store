@@ -1,12 +1,19 @@
 .subscription {
     background-image: url('../img/subscription-bkg.jpg');
-    width: 1598px;
-    height: 448px;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     &__wrp {
         display: flex;
         align-items: center;
-        padding: 86px 0 0 0;
+        padding: 86px 0 126px 0;
+
+        @include tablet {
+            flex-direction: column;
+            padding: 53px 0 140px 0;
+        }
     }
     
     &__face {
@@ -14,6 +21,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @include tablet {
+            padding: 0 0 48px;
+        }
     }
     
     &__face-img {

@@ -2,12 +2,31 @@
     display: flex;
     margin: 0 0 63px 0;
 
+    &__img {
+        flex-grow: 1;
+
+        @include tablet {
+            width: 50%;
+            height: 368px;
+            object-fit: cover;
+        }
+
+        @include mobile {
+            display: none;
+        }
+    }
+
     &__title-wrp {
         display: flex;
         align-items: center;
         padding: 0 0 0 92px;
         background-color: $pink-bkg;
         flex-grow: 1;
+
+        @include tablet {
+            width: 50%;
+            min-height: 368px;
+        }
     }
     
     &__title {
@@ -15,6 +34,14 @@
         @include font (48px, 58px, 900);
         color: $black;
         text-transform: uppercase;
+
+        @include tablet {
+            @include font (44px, 53px, 900);
+        }
+
+        @include mobile {
+            @include font (38px, 46px, 900);
+        }
     }
     
     &__title:after {
@@ -30,10 +57,17 @@
     &__sub-title {
         display: block;
         @include font (32px, 38px, 900);
+
+        @include tablet {
+            @include font (24px, 29px, 700);
+        }
+
+        @include mobile {
+            @include font (20px, 24px, 700);
+        }
     }
     
     &__sub-title-pink {
         color: $pink-text;
     }
 }
-
