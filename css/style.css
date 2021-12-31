@@ -1059,4 +1059,27 @@ table {
   left: -45px;
   top: 7px;
 }
+
+.title-arrivals {
+  min-height: 148px;
+  background-color: #F8F3F4;
+}
+
+.title-arrivals__text {
+  padding: 59px 0 0 0;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  font-style: normal;
+  color: #F1808F;
+  text-transform: uppercase;
+}
+
+.arrivals__img {
+  width: 597px;
+  min-height: 724px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 auto;
+}
 /*# sourceMappingURL=style.css.map */
