@@ -43,14 +43,18 @@
         border: 0;
     }
     
-    &__button:hover, .header__button:focus {
+    &__button:hover &__button-img {
         opacity: 0.5;
         cursor: pointer;
         outline: none;
     }
     
-    &__button:active {
+    &__button:active &__button-img {
         opacity: 0.7;
+    }
+
+    &__button:focus &__menu {
+        display: block;
     }
     
     &__link {
@@ -85,7 +89,21 @@
     }
     
     &__menu {
+        z-index: 1;
         display: none;
+        position: absolute;
+        width: 232px;
+        min-height: 764px;
+        background: $white;
+        right: 0px;
+        top: 75px;
+        text-align: left;
+    }
+
+    &__menu-title {
+        @include font($font-weight: 700);
+        text-transform: uppercase;
+        padding: 37px 0 0 34px;
     }
     
     &__wrp {

@@ -53,6 +53,7 @@ table {
   line-height: 17px;
   font-weight: 400;
   font-style: normal;
+  position: relative;
 }
 
 .visually-hidden {
@@ -134,14 +135,18 @@ table {
   border: 0;
 }
 
-.header__button:hover, .header .header__button:focus {
+.header__button:hover .header__button-img {
   opacity: 0.5;
   cursor: pointer;
   outline: none;
 }
 
-.header__button:active {
+.header__button:active .header__button-img {
   opacity: 0.7;
+}
+
+.header__button:focus .header__menu {
+  display: block;
 }
 
 .header__link {
@@ -176,7 +181,24 @@ table {
 }
 
 .header__menu {
+  z-index: 1;
   display: none;
+  position: absolute;
+  width: 232px;
+  min-height: 764px;
+  background: #FFF;
+  right: 0px;
+  top: 75px;
+  text-align: left;
+}
+
+.header__menu-title {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  padding: 37px 0 0 34px;
 }
 
 .header__wrp {
@@ -196,6 +218,12 @@ table {
   .header__link {
     display: none;
   }
+}
+
+.menu-sub-title__item {
+  color: #F1808F;
+  padding: 24px 0 0 33px;
+  text-transform: uppercase;
 }
 
 .brand {
