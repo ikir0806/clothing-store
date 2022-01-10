@@ -3,6 +3,10 @@
 
     &__wrp {
         display: flex;
+
+        @include mobile {
+            display: block;
+        }
     }
     
     &__field {
@@ -80,6 +84,14 @@
     &__loyalty {
         padding: 0 0 0 128px;
 
+        @include tablet {
+            padding: 0 0 0 22px;
+        }
+
+        @include mobile {
+            padding: 40px 0 0 0;
+        }
+
         &-title {
             @include font (24px, 29px, 300);
             text-transform: uppercase;
@@ -89,6 +101,10 @@
             width: 652px;
             @include font (24px, 29px, 300);
             margin: 22px 0 0 0;
+
+            @include tablet {
+                width: 354px;
+            }
         }
         
         &-list {

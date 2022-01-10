@@ -226,6 +226,16 @@ table {
   text-transform: uppercase;
 }
 
+.menu-sub-title__item-link {
+  padding: 12px 0 0 55px;
+  color: #5D5D5D;
+  text-decoration: none;
+}
+
+.menu-sub-title__item-link:focus, .menu-sub-title__item-link:hover {
+  opacity: 0.7;
+}
+
 .brand {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -956,6 +966,12 @@ table {
   display: flex;
 }
 
+@media (max-width: 767px) {
+  .registration__wrp {
+    display: block;
+  }
+}
+
 .registration__field {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -1047,6 +1063,18 @@ table {
   padding: 0 0 0 128px;
 }
 
+@media (max-width: 1599px) {
+  .registration__loyalty {
+    padding: 0 0 0 22px;
+  }
+}
+
+@media (max-width: 767px) {
+  .registration__loyalty {
+    padding: 40px 0 0 0;
+  }
+}
+
 .registration__loyalty-title {
   font-size: 24px;
   line-height: 29px;
@@ -1062,6 +1090,12 @@ table {
   font-weight: 300;
   font-style: normal;
   margin: 22px 0 0 0;
+}
+
+@media (max-width: 1599px) {
+  .registration__loyalty-text {
+    width: 354px;
+  }
 }
 
 .registration__loyalty-list {
