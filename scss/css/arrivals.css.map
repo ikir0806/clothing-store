@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAEK,AAAD,cAAM,CAAC;EACH,KAAK,EAAE,KAAK;EACZ,UAAU,EAAE,KAAK;CACpB",
-    "sources": [
-        "../blocks/arrivals.scss"
-    ],
-    "names": [],
-    "file": "arrivals.css"
-}
