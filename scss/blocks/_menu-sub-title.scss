@@ -4,4 +4,14 @@
         padding: 24px 0 0 33px;
         text-transform: uppercase;
     }
+
+    &__item-link {
+        padding: 12px 0 0 55px;
+        color: $grey-text;
+        text-decoration: none;
+    }
+
+    &__item-link:focus,  &__item-link:hover {
+        opacity: 0.7;
+    }
 }
