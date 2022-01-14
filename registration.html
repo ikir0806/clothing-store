@@ -20,51 +20,53 @@
             <div class="header__wrp">
                 <div class="header__search-group">
                     <a class="header__logo" href="./index.html"><img src="./img/logo.svg" alt="logo"></a>
-                    <form class="header__search" action="">
-                        <label class="header__search-label visually-hidden" for="seacrh">поиск</label>
+                    <form class="header__search" action="#">
+                        <label class="header__search-label visually-hidden" for="search">поиск</label>
                         <input class="header__search-input" type="search" placeholder="Search" id="search">
                     </form>
                 </div>
                 <div class="header__nav-group">
-                    <button class="header__button" type="button">
-                        <img src="img/burger.svg" alt="burger">
-                        <nav class="header__menu">
-                            <h2 class="header__menu-title">menu</h2>
-                            <ul class="header__menu-list">
-                                <li class="header__menu-item menu-sub-item">
-                                    <h3 class="menu-sub-title__item">men</h3>
-                                    <ul class="menu-sub-title__list">
-                                        <li><a class="menu-sub-title__item-link" href="#">Accessories</a></li>
-                                        <li><a class="menu-sub-title__item-link" href="#">Bags</a></li>
-                                        <li><a class="menu-sub-title__item-link" href="#">Denim</a></li>
-                                        <li><a class="menu-sub-title__item-link" href="#">T-Sshirts</a></li>
-                                    </ul>
-                                </li>
-                                <li class="header__menu-item menu-sub-item">
-                                    <h3 class="menu-sub-title__item">women</h3>
-                                    <Ul class="menu-sub-title__list">
-                                        <li><a class="menu-sub-title__item-link" href="#">Accessories</a></li>
-                                        <li><a class="menu-sub-title__item-link" href="#">Jackets & Coats</a></li>
-                                        <li><a class="menu-sub-title__item-link" href="#">Polos</a></li>
-                                        <li><a class="menu-sub-title__item-link" href="#">T-Shirts</a></li>
-                                        <li><a class="menu-sub-title__item-link" href="#">Shirts</a></li>
-                                    </Ul>
-                                </li>
-                                <li class="header__menu-item menu-sub-item">
-                                    <h3 class="menu-sub-title__item">kids</h3>
-                                    <ul class="menu-sub-title__list">
-                                        <li><a class="menu-sub-title__item-link" href="#">Accessories</a></li>
-                                        <li><a class="menu-sub-title__item-link" href="#">Jackets & Coats</a></li>
-                                        <li><a class="menu-sub-title__item-link" href="#">Polos</a></li>
-                                        <li><a class="menu-sub-title__item-link" href="#">T-Shirts</a></li>
-                                        <li><a class="menu-sub-title__item-link" href="#">Shirts</a></li>
-                                        <li><a class="menu-sub-title__item-link" href="#">Bags</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </nav>
-                    </button>
-                    <a class="header__link" href="#"><img src="img/person.svg" alt="person"></a>
+                    <input class="header__menu-checkbox" id="header__menu-toggle" type="checkbox" />
+                    <label class="header__menu-btn" for="header__menu-toggle">
+                        <span><img class="header__button-img" src="img/burger.svg" alt="burger"></span>
+                    </label>
+                    <nav class="header__menu">
+                        <h2 class="header__menu-title">menu</h2>
+                        <ul class="header__menu-list">
+                            <li class="header__menu-item menu-sub-title">
+                                <h3 class="menu-sub-title__item">men</h3>
+                                <ul class="menu-sub-title__list">
+                                    <li><a class="menu-sub-title__item-link" href="catalog.html">Accessories</a>
+                                    </li>
+                                    <li><a class="menu-sub-title__item-link" href="#">Bags</a></li>
+                                    <li><a class="menu-sub-title__item-link" href="#">Denim</a></li>
+                                    <li><a class="menu-sub-title__item-link" href="#">T-Sshirts</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__menu-item menu-sub-item">
+                                <h3 class="menu-sub-title__item">women</h3>
+                                <Ul class="menu-sub-title__list">
+                                    <li><a class="menu-sub-title__item-link" href="#">Accessories</a></li>
+                                    <li><a class="menu-sub-title__item-link" href="#">Jackets & Coats</a></li>
+                                    <li><a class="menu-sub-title__item-link" href="#">Polos</a></li>
+                                    <li><a class="menu-sub-title__item-link" href="#">T-Shirts</a></li>
+                                    <li><a class="menu-sub-title__item-link" href="#">Shirts</a></li>
+                                </Ul>
+                            </li>
+                            <li class="header__menu-item menu-sub-item">
+                                <h3 class="menu-sub-title__item">kids</h3>
+                                <ul class="menu-sub-title__list">
+                                    <li><a class="menu-sub-title__item-link" href="#">Accessories</a></li>
+                                    <li><a class="menu-sub-title__item-link" href="#">Jackets & Coats</a></li>
+                                    <li><a class="menu-sub-title__item-link" href="#">Polos</a></li>
+                                    <li><a class="menu-sub-title__item-link" href="#">T-Shirts</a></li>
+                                    <li><a class="menu-sub-title__item-link" href="#">Shirts</a></li>
+                                    <li><a class="menu-sub-title__item-link" href="#">Bags</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a class="header__link" href="registration.html"><img src="img/person.svg" alt="person"></a>
                     <a class="header__link header__link-busket" href="#"><img src="img/busket.svg" alt="busket"></a>
                 </div>
             </div>
@@ -78,7 +80,7 @@
         </section>
         <section class="registration">
             <div class="container registration__wrp">
-                <form class="registration__field" action="">
+                <form class="registration__field" action="#">
                     <fieldset>
                         <legend class="registration__name">Your Name</legend>
                         <label class="registration__label">
@@ -142,7 +144,7 @@
                 <div class="subscription__email">
                     <h3 class="subscription__email-title">subscribe</h3>
                     <p class="subscription__email-text">for our newletter and promotion</p>
-                    <form class="subscription__email-wrp" action="">
+                    <form class="subscription__email-wrp" action="#">
                         <label><input class="subscription__email-input" type="email"
                                 placeholder="Enter Your Email"><span class="visually-hidden">email</span></label>
                         <button type="submit" class="subscription__email-button">Subscribe</button>
@@ -152,6 +154,7 @@
         </section>
         <section class="copyright">
             <div class="container">
+                <h2 class="visually-hidden">copyright title</h2>
                 <div class="copyright__wrp">
                     <div class="copyright__wrp-text">
                         <p>© 2021 Brand All Rights Reserved.</p>

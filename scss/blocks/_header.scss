@@ -38,23 +38,21 @@
         background-size: 26px 26px;
     }
     
-    &__button {
-        background-color: transparent;
-        border: 0;
-    }
-    
-    &__button:hover &__button-img {
-        opacity: 0.5;
-        cursor: pointer;
-        outline: none;
-    }
-    
-    &__button:active &__button-img {
-        opacity: 0.7;
+    &__menu-checkbox {
+        opacity: 0;
     }
 
-    &__button:focus &__menu {
+   &__menu-btn:hover, &__menu-btn:focus {
+        cursor: pointer;
+        opacity: 0.5;
+    }
+
+    &__menu-checkbox:checked ~ &__menu {
         display: block;
+    }
+
+    &__button-img {
+        padding: 0 5px 2px 0;
     }
     
     &__link {
@@ -98,6 +96,7 @@
         right: 0px;
         top: 75px;
         text-align: left;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     }
 
     &__menu-title {
