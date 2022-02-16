@@ -151,24 +151,26 @@ table {
   margin: 0 0 0 33px;
 }
 
-.header__link-busket {
+.header__link-basket {
   position: relative;
 }
 
-.header__link-busket:before {
-  position: absolute;
-  content: '5';
-  background-color: #F1808F;
-  border-radius: 50%;
-  color: #FFF;
-  right: -10px;
-  top: -20px;
+.header__link-basket span {
+  display: inline-block;
   width: 19px;
   height: 19px;
+  color: white;
+  background: #f16d7f;
+  border-radius: 50%;
+  position: absolute;
   text-align: center;
+  right: -8px;
+  top: -19px;
+  font-size: 12px;
+  line-height: 19px;
 }
 
-.header__link:hover, .header .header__link:focus {
+.header__link:hover {
   opacity: 0.5;
   cursor: pointer;
   outline: none;
@@ -1194,6 +1196,10 @@ table {
   color: #F1808F;
 }
 
+.arrivals {
+  margin-top: 1000px;
+}
+
 .arrivals__img {
   width: 597px;
   min-height: 724px;
@@ -1789,5 +1795,53 @@ table {
 
 .catalog__page-1 {
   color: #F1808F;
+}
+
+.rightHeader {
+  position: relative;
+}
+
+.basket {
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  top: 77px;
+  background: white;
+  padding: 10px;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+@media (min-width: 340px) {
+  .basket {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 552px) {
+  .basket {
+    width: 500px;
+  }
+}
+
+.basketRow {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 10px;
+}
+
+.basketHeader {
+  font-weight: bold;
+}
+
+.basketTotal {
+  font-weight: bold;
+  text-align: right;
 }
 /*# sourceMappingURL=style.css.map */

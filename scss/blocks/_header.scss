@@ -59,24 +59,26 @@
         margin: 0 0 0 33px;
     }
     
-    &__link-busket {
+    &__link-basket {
         position: relative;
     }
     
-    &__link-busket:before {
-        position: absolute;
-        content: '5';
-        background-color: $pink-text;
-        border-radius: 50%;
-        color: $white;
-        right: -10px;
-        top: -20px;
+    &__link-basket span {
+        display: inline-block;
         width: 19px;
         height: 19px;
+        color: white;
+        background: #f16d7f;
+        border-radius: 50%;
+        position: absolute;
         text-align: center;
+        right: -8px;
+        top: -19px;
+        font-size: 12px;
+        line-height: 19px;
     }
     
-    &__link:hover, .header__link:focus {
+    &__link:hover {
         opacity: 0.5;
         cursor: pointer;
         outline: none;
