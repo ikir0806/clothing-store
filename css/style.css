@@ -88,11 +88,21 @@ table {
 .header {
   background-color: #222222;
 }
+@media (max-width: 767px) {
+  .header__nav-group {
+    margin-left: 10px;
+  }
+}
 .header__search-group {
   display: flex;
 }
 .header__logo {
   margin: 0 41px 0 0;
+}
+@media (max-width: 767px) {
+  .header__logo {
+    margin: 0 15px 0 0;
+  }
 }
 .header__search {
   position: relative;
@@ -121,6 +131,11 @@ table {
 }
 .header__menu-checkbox {
   opacity: 0;
+}
+@media (max-width: 767px) {
+  .header__menu-checkbox {
+    display: none;
+  }
 }
 .header__menu-btn:hover, .header__menu-btn:focus {
   cursor: pointer;

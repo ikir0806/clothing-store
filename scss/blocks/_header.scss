@@ -1,122 +1,137 @@
 .header {
-    background-color: $black;
+  background-color: $black;
 
-    &__search-group {
-        display: flex;
+  &__nav-group {
+    @include mobile {
+      margin-left: 10px;
     }
-    
-    &__logo {
-        margin: 0 41px 0 0;
-    }
-    
-    &__search {
-        position: relative;
-    }
-    
-    &__search-input {
-        padding: 10px 40px;
-        border: none;
-        color: $white;
-        background: transparent;
-        outline: 1px solid $white;
-        border-radius: 40px 40px 40px 40px;
-    }
-      
-    &__search-input:hover {
-        outline: 1px solid $pink-text;
-    }
-      
-    &__search:before {
-        content: '';
-        position: absolute;
-        width: 26px;
-        height: 26px;
-        background: transparent;
-        top: 7px;
-        left: 7px;
-        background-image: url("../img/loupe.svg");
-        background-size: 26px 26px;
-    }
-    
-    &__menu-checkbox {
-        opacity: 0;
-    }
+  }
 
-   &__menu-btn:hover, &__menu-btn:focus {
-        cursor: pointer;
-        opacity: 0.5;
-    }
+  &__search-group {
+    display: flex;
+  }
 
-    &__menu-checkbox:checked ~ &__menu {
-        display: block;
-    }
+  &__logo {
+    margin: 0 41px 0 0;
 
-    &__button-img {
-        padding: 0 5px 2px 0;
+    @include mobile {
+      margin: 0 15px 0 0;
     }
-    
-    &__link {
-        margin: 0 0 0 33px;
-    }
-    
-    &__link-basket {
-        position: relative;
-    }
-    
-    &__link-basket span {
-        display: inline-block;
-        width: 19px;
-        height: 19px;
-        color: white;
-        background: #f16d7f;
-        border-radius: 50%;
-        position: absolute;
-        text-align: center;
-        right: -8px;
-        top: -19px;
-        font-size: 12px;
-        line-height: 19px;
-    }
-    
-    &__link:hover {
-        opacity: 0.5;
-        cursor: pointer;
-        outline: none;
-    }
-    
-    &__link:active {
-        opacity: 0.7;
-    }
-    
-    &__menu {
-        z-index: 1;
-        display: none;
-        position: absolute;
-        width: 232px;
-        min-height: 764px;
-        background: $white;
-        right: 0px;
-        top: 75px;
-        text-align: left;
-        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-    }
+  }
 
-    &__menu-title {
-        @include font($font-weight: 700);
-        text-transform: uppercase;
-        padding: 37px 0 0 34px;
+  &__search {
+    position: relative;
+  }
+
+  &__search-input {
+    padding: 10px 40px;
+    border: none;
+    color: $white;
+    background: transparent;
+    outline: 1px solid $white;
+    border-radius: 40px 40px 40px 40px;
+  }
+
+  &__search-input:hover {
+    outline: 1px solid $pink-text;
+  }
+
+  &__search:before {
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background: transparent;
+    top: 7px;
+    left: 7px;
+    background-image: url('../img/loupe.svg');
+    background-size: 26px 26px;
+  }
+
+  &__menu-checkbox {
+    opacity: 0;
+
+    @include mobile {
+      display: none;
     }
-    
-    &__wrp {
-        display: flex;
-        justify-content: space-between;
-        min-height: 75px;
-        align-items: center;
-    }
+  }
+
+  &__menu-btn:hover,
+  &__menu-btn:focus {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+
+  &__menu-checkbox:checked ~ &__menu {
+    display: block;
+  }
+
+  &__button-img {
+    padding: 0 5px 2px 0;
+  }
+
+  &__link {
+    margin: 0 0 0 33px;
+  }
+
+  &__link-basket {
+    position: relative;
+  }
+
+  &__link-basket span {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    color: white;
+    background: #f16d7f;
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+    right: -8px;
+    top: -19px;
+    font-size: 12px;
+    line-height: 19px;
+  }
+
+  &__link:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    outline: none;
+  }
+
+  &__link:active {
+    opacity: 0.7;
+  }
+
+  &__menu {
+    z-index: 1;
+    display: none;
+    position: absolute;
+    width: 232px;
+    min-height: 764px;
+    background: $white;
+    right: 0px;
+    top: 75px;
+    text-align: left;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  }
+
+  &__menu-title {
+    @include font($font-weight: 700);
+    text-transform: uppercase;
+    padding: 37px 0 0 34px;
+  }
+
+  &__wrp {
+    display: flex;
+    justify-content: space-between;
+    min-height: 75px;
+    align-items: center;
+  }
 }
 
 @media (max-width: $mobile-width) {
-    .header__link {
-        display: none;
-    }
+  .header__link {
+    display: none;
+  }
 }
